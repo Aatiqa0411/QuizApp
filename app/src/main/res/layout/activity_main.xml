@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/quiz1"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/icon"
+        />
+
+    <TextView
+        android:id="@+id/score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Total Score: 0"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/timer_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="-27dp"
+        android:layout_marginEnd="20dp"
+        android:text="Time: 00:00"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/question_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="42dp"
+        android:text="Q1: Who deserves to be the  Prime Minister of Pakistan?"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/answer_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/ans_1" android:layout_marginTop="20dp" android:layout_marginStart="50dp" android:layout_marginEnd="45dp" android:textSize="20sp" />
+        <RadioButton android:id="@+id/ans_2" android:layout_marginStart="50dp" android:layout_marginEnd="45dp" android:textSize="20sp" />
+        <RadioButton android:id="@+id/ans_3" android:layout_marginStart="50dp" android:layout_marginEnd="45dp" android:textSize="20sp" />
+        <RadioButton android:id="@+id/ans_4" android:layout_marginStart="50dp" android:layout_marginEnd="45dp" android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/previous_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:text="Prev"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="20sp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="-49dp"
+        android:layout_marginEnd="30dp"
+        />
+    <Button
+        android:id="@+id/end_exam_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="-49dp"
+        android:layout_marginEnd="30dp"
+        android:text="End"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/show_ans_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:text="Show Correct Answer"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/final_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:textColor="#FF00FF"
+        />
+</LinearLayout>
