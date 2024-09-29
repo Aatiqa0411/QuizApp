@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -52,10 +53,34 @@
         android:id="@+id/answer_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-        <RadioButton android:id="@+id/ans_1" android:layout_marginTop="20dp" android:layout_marginStart="50dp" android:layout_marginEnd="45dp" android:textSize="20sp" />
-        <RadioButton android:id="@+id/ans_2" android:layout_marginStart="50dp" android:layout_marginEnd="45dp" android:textSize="20sp" />
-        <RadioButton android:id="@+id/ans_3" android:layout_marginStart="50dp" android:layout_marginEnd="45dp" android:textSize="20sp" />
-        <RadioButton android:id="@+id/ans_4" android:layout_marginStart="50dp" android:layout_marginEnd="45dp" android:textSize="20sp" />
+        <RadioButton
+            android:id="@+id/ans_1"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="45dp"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <RadioButton android:id="@+id/ans_2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="45dp"
+            android:textSize="20sp" />
+        <RadioButton
+            android:id="@+id/ans_3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="45dp"
+            android:textSize="20sp" />
+        <RadioButton
+            android:id="@+id/ans_4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="45dp"
+            android:textSize="20sp" />
     </RadioGroup>
 
     <Button
